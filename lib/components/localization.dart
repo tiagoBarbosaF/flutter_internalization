@@ -17,7 +17,7 @@ class LocalizationContainer extends BlocContainer {
 }
 
 class CurrentLocaleCubit extends Cubit<String> {
-  CurrentLocaleCubit() : super('pt-br');
+  CurrentLocaleCubit() : super('en');
 }
 
 class ViewI18N {
@@ -27,7 +27,9 @@ class ViewI18N {
    _language = BlocProvider.of<CurrentLocaleCubit>(context).state;
   }
 
-  String? localize(Map<String, String> values) {
-    return values[_language];
+  String localize(Map<String, String> values) {
+    assert(values.containsKey(_language));
+
+    return values[_language]!;
   }
 }

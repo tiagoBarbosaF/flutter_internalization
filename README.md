@@ -30,6 +30,11 @@
 - Preguiçoso ou Ansioso?
 - Faça como eu fiz
 - O que aprendi?
+  - Como usamos uma cláusula de guarda (`assert`) para validar o argumento
+  - Que o `assert` deve ser usado para validar erros de desenvolvimento (que não são de negócio)
+  - Que o `assert` precisa ser habilitado na compilação
+  - Que normalmente usamos o `_` para constantes
+  - Por que faz sentido carregar mensagens de maneira lazy
 
 ### i18n de maneira lazy
 - Framework de i18n

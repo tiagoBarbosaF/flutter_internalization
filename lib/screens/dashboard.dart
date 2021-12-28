@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mybank/components/container.dart';
 import 'package:mybank/components/localization.dart';
 import 'package:mybank/models/name_change.dart';
 import 'package:mybank/screens/contacts_list.dart';
 import 'package:mybank/screens/name_container.dart';
 import 'package:mybank/screens/transactions_list.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DashboardContainer extends BlocContainer {
   const DashboardContainer({Key? key}) : super(key: key);
@@ -89,7 +89,7 @@ class DashboardView extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  i18n.transfer()!,
+                  i18n.transfer(),
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
                   ),
@@ -116,7 +116,7 @@ class DashboardView extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  i18n.transaction_feed()!,
+                  i18n.transactionFeed(),
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
                   ),
@@ -143,7 +143,7 @@ class DashboardView extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  i18n.profile()!,
+                  i18n.profile(),
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
                   ),
@@ -183,19 +183,25 @@ class DashboardView extends StatelessWidget {
 class DashboardViewI18N extends ViewI18N {
   DashboardViewI18N(BuildContext context) : super(context);
 
-  String? transfer() {
+  String transfer() {
     return localize(
-      {'pt-br': 'Transferir', 'en': 'Transfer'},
+      {
+        'pt-br': 'Transferir',
+        'en': 'Transfer',
+        'spa': 'Transferir',
+        'de': "Transfer",
+        'jp': 'Tensō'
+      },
     );
   }
 
-  String? transaction_feed() {
+  String transactionFeed() {
     return localize(
       {'pt-br': 'Transações', 'en': 'Transactions'},
     );
   }
 
-  String? profile() {
+  String profile() {
     return localize(
       {'pt-br': 'Perfil', 'en': 'Profile'},
     );
