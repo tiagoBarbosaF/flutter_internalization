@@ -13,16 +13,6 @@ class ErrorView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        // leading: IconButton(
-        //   icon: Icon(
-        //     Icons.close,
-        //     color: Theme.of(context).colorScheme.primary,
-        //     size: 40,
-        //   ),
-        //   onPressed: () {
-        //     Navigator.pop(context);
-        //   },
-        // ),
       ),
       backgroundColor: Colors.white,
       body: Center(

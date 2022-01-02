@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mybank/components/centered_message.dart';
-import 'package:mybank/components/progress.dart';
+import 'package:mybank/components/progress/progress.dart';
 import 'package:mybank/http/webclients/transaction_webclient.dart';
 import 'package:mybank/models/transaction.dart';
 import 'package:intl/intl.dart';
@@ -35,7 +35,7 @@ class TransactionsList extends StatelessWidget {
             case ConnectionState.none:
               break;
             case ConnectionState.waiting:
-              return const Progress();
+              return const Progress(message: 'Loading...',);
               // ignore: dead_code
               break;
             case ConnectionState.active:

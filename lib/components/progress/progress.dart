@@ -36,25 +36,3 @@ class Progress extends StatelessWidget {
     );
   }
 }
-
-class ProgressView extends StatelessWidget {
-  final String message;
-
-  const ProgressView({Key? key, required this.message}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-      ),
-      backgroundColor: Colors.white,
-      body: Progress(
-        message: message,
-        subtitle: 'Sending...',
-      ),
-    );
-  }
-}

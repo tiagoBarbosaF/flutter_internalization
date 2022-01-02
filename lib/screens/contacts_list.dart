@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mybank/components/container.dart';
-import 'package:mybank/components/progress.dart';
+import 'package:mybank/components/progress/progress.dart';
 import 'package:mybank/database/dao/contact_dao.dart';
 import 'package:mybank/models/contact.dart';
 import 'package:mybank/screens/contact_form.dart';
@@ -11,8 +11,8 @@ abstract class ContactsListState {
   const ContactsListState();
 }
 
-class LoadingContactListState extends ContactsListState {
-  const LoadingContactListState();
+class LoadingContactsListState extends ContactsListState {
+  const LoadingContactsListState();
 }
 
 class LoadedContactsListState extends ContactsListState {
@@ -33,7 +33,7 @@ class ContactsListCubit extends Cubit<ContactsListState> {
   ContactsListCubit() : super(const InitContactsListState());
 
   void reload(ContactDao contactDao) async {
-    emit(const LoadingContactListState());
+    emit(const LoadingContactsListState());
     contactDao
         .findAll()
         .then((contacts) => emit(LoadedContactsListState(contacts)));
@@ -101,8 +101,8 @@ class ContactList extends StatelessWidget {
       body: BlocBuilder<ContactsListCubit, ContactsListState>(
         builder: (context, state) {
           if (state is InitContactsListState ||
-              state is LoadingContactListState) {
-            return const Progress();
+              state is LoadingContactsListState) {
+            return const Progress(message: 'Loading...',);
           }
 
           if (state is LoadedContactsListState) {

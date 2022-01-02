@@ -2,11 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mybank/screens/dashboard.dart';
+import 'package:mybank/components/localization/locale.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:mybank/screens/dashboard/dashboard_container.dart';
 
-import 'components/container.dart';
-import 'components/localization.dart';
 import 'components/theme.dart';
 
 void main() {

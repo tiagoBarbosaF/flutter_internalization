@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:mybank/components/container.dart';
-import 'package:mybank/components/error.dart';
-import 'package:mybank/components/progress.dart';
+import 'package:mybank/components/error_view.dart';
+import 'package:mybank/components/progress/progress_view.dart';
 import 'package:mybank/components/success.dart';
 import 'package:mybank/components/transaction_auth_dialog.dart';
 import 'package:mybank/http/webclients/transaction_webclient.dart';

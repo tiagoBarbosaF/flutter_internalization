@@ -41,12 +41,24 @@
 - i18n Lazy
 - Faça como eu fiz
 - O que aprendi?
+  - Como construir uma tela para mostrar o carregamento das mensagens (`ProgressView`)
+  - O `ProgressView`
+  - Que as mensagens são carregados através de um evento (`emit`)
+  - Que a aplicação usa o `DashboardContainer`, que usa o `I18NLoadingContainer` como `child`, para carregar as mensagens e, quando carregou, chamamos a `DashboardView`
+  - Que a `DashboardView` recebe as mensagens que serão carregadas lazy
 
 ### Telas e Locale
 - i18n do servidor remoto
 - Várias Telas e Locale
 - Faça como eu fiz
 - O que aprendi?
+  - Que as mensagens devem estar em um servidor da sua escolha, dentro de um arquivo JSON
+  - Como usamos o `HttpClient` para executar a requisição HTTP (não era novidade!)
+  - Como carregar as mensagens de maneira assíncrona
+  - Como dar suporte a várias linguagens, usando URLs diferentes
+  - Como carregar as mensagens da aplicação inteira ou tela por tela
+    - Usamos o nome da tela para o arquivo de mensagem
+    - Usando, por exemplo, `dashboard_en.json` ou `dashboard_pt.json`
 
 ### Cache local e boas práticas
 - Cache local eterno
@@ -57,6 +69,12 @@
 - Projeto completo do curso
 - Conclusão
 - O que aprendi?
+  - Como trabalhar com cache local
+    - Usamos a classe `LocalStorage`
+    - Usamos o mesmo prefixo `viewKey` para o storage
+    - O storage é inicializado de maneira assíncrona
+  - Como usar mensagens para várias telas, usando `BlocProvider` e `Builder`
+  - Como organizar os arquivos relacionados ao `i18n` em camadas
 
 ***
 
