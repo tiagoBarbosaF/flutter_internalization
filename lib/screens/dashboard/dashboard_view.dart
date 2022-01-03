@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mybank/components/container.dart';
-import 'package:mybank/components/localization/eager_localization.dart';
-import 'package:mybank/components/localization/i18n_container.dart';
-import 'package:mybank/components/localization/i18n_loadingview.dart';
-import 'package:mybank/components/localization/i18n_messages.dart';
 import 'package:mybank/models/name_change.dart';
 import 'package:mybank/screens/contacts_list.dart';
 import 'package:mybank/screens/dashboard/dashboard_i18n.dart';

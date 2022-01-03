@@ -3,7 +3,6 @@ import 'package:mybank/models/name_change.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mybank/screens/dashboard/dashboard_i18n.dart';
 
-import '../dashboard/dashboard_view.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

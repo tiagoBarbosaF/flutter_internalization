@@ -1,4 +1,4 @@
-# Flutter - Internalization
+# Flutter - Internalization and Tests
 
 > **obs1.:** Para uso do webApi de exemplo, vá a pasta **WebApiStudies** e no arquivo README tem toda a descrição de utilização.
 > 
@@ -75,6 +75,18 @@
     - O storage é inicializado de maneira assíncrona
   - Como usar mensagens para várias telas, usando `BlocProvider` e `Builder`
   - Como organizar os arquivos relacionados ao `i18n` em camadas
+
+### Criando primeiros testes
+- Testes no Flutter
+- Criando testes de unidade
+- Implementando os testes de unidade
+- Primeiros testes de widgets
+- Implementando testes de widget
+- O que aprendi?
+  - Quais são as categorias de testes no Flutter;
+  - A quantidade de implementação de testes recomendada por categoria no Flutter;
+  - O trade-off de cada categoria de teste.
+
 
 ***
 

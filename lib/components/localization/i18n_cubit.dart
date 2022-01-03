@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:mybank/components/localization/i18n_messages.dart';
 import 'package:mybank/components/localization/i18n_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
